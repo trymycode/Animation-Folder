@@ -1,0 +1,48 @@
+.image{
+	
+	width: 350px;
+	height: 350px;
+	margin: 10px 90px;
+	float: left;
+
+}
+h2{
+	font-size: 45px;
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Lato','sans-serif';
+}
+.image1{
+	background-color: orange;
+}
+
+.image1:hover img{
+	opacity: 0.2;
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+   }
+.item:hover i{
+	transform: scale(0);
+	transition: transform 0.5s ease-in-out 100ms;
+}
+.image2{
+	background-color: rgba(130, 42,34,0.8);
+}
+.image2 img{
+	opacity: 0.3;
+	-webkit-filter: grayscale(20%); 
+    filter: grayscale(20%);
+}
+ .image2:hover img{
+	opacity: 1;
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+
+div.item * {
+	transition: all 0.5s ease-in-out 10ms;
+}
+div i{
+	/*transform: translate(-50%, -50%);*/
+	color: rgba(32, 32, 33, 0.7);
+}

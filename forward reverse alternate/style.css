@@ -1,0 +1,57 @@
+.box{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+	background-color: #e82910;
+	animation-name: animated;
+	border-radius: 20px;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	float: bottom;
+}
+
+.container1{
+	position: relative;
+	margin: 0 20%;
+}
+.container2{
+	position: relative;
+	margin: -620px 40%;
+	
+}
+.container3{
+	position: relative;
+	margin: -620px 60%;
+	
+}
+
+.forward{
+	transition: transform 4s 0.3s  linear;
+	animation-direction: forward;
+	animation-fill-mode: forwards;
+}
+.reverse{
+	transition: all 5s 0.3s  linear;
+	animation-direction: reverse;
+	animation-fill-mode: backwards;
+}
+.alternate{
+	transition: transform 5s 0.3s  linear;
+	animation-direction: forward;
+}
+.box:hover{
+	animation-play-state: paused;
+}
+@keyframes animated{
+	20%   {transform: translateX(-100px);}
+	40%   {transform: translateX(200px);}
+    50%  {transform: translateX(300px);background: #000;}
+    60%  {transform: translateX(300px);}
+    70%  {transform: translateX(200px);}
+     80%  {transform: translateX(200px);}
+     100%  {transform: translateX(-100px);}
+}

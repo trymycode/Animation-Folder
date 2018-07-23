@@ -1,0 +1,44 @@
+.square{
+	width: 250px;
+	height: 80px;
+	background-color: #c667c2;
+	animation-name: jiggle;
+	border-radius: 20px;
+	animation-duration: 2.4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	margin: 10% auto;
+	text-align: center;
+	font-weight: 400;
+	font-size: 25px;
+	color: #fff;
+	box-sizing: border-box;
+	
+
+}
+.square p{
+	padding-top: 22px !important;
+}
+
+
+
+@keyframes jiggle{
+	48%, 62% {
+		-webkit-transform: scale(1.0, 1.0);
+		        transform: scale(1.0, 1.0);
+
+	}
+	50% {
+		-webkit-transform: scale(1.1, 0.9);
+		        transform: scale(1.1, 0.9);
+	}
+	56% {
+		-webkit-transform: scale(0.8, 1.2) translate(0, -5px);
+		        transform: scale(0.8, 1.2) translate(0, -5px);
+	}
+	59% {
+		-webkit-transform: scale(1.0, 1.0) translate(0, -3px);
+		        transform: scale(1.0, 1.0) translate(0, -3px);
+	}
+	
+}

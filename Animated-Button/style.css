@@ -1,0 +1,36 @@
+body{
+	text-align: center;
+	background-color: #f4b942;
+	font-weight: 300;
+}
+button{
+	outline: none;
+	cursor: pointer;
+	background-color: #ff9a35;
+	text-align: center;
+	padding: 25px 90px;
+	color: white;
+	box-shadow: 0 6px #e0832c;
+	border: none;
+	border-radius: 20px;
+	position: relative;
+	letter-spacing: 2px;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+button:hover{
+	box-shadow: 0 4px #e0832c;
+	top: 4px;
+	
+}
+
+button:active{
+	box-shadow: 0 0 #e0832c;
+	}
+h1{
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom: 20px;
+	font-weight: 300;
+}

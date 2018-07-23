@@ -1,0 +1,146 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.sky{
+	width: 100vw;
+	height: 80vh;
+	position: relative;
+	animation-name: skycolorchange;
+	animation-duration: 11s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	}
+.sun{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: fixed;
+	left: 5%;
+	top:40%;
+	box-sizing: border-box;
+	animation-name: sunmotion;
+	animation-duration: 12s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	background-color: rgb(244, 113, 66);
+	animation-fill-mode: forwards;
+}
+
+.ground{
+	width: 100vw;
+	height: 20vh;
+	position: relative;
+	top: 80%;
+	background: #52c234;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+@keyframes skycolorchange{
+	0%{
+		background-color: #d0ede5;
+
+	}
+	50%{
+		background: #fcfade;
+	}
+	70%{
+		background-color: #edf4f4;
+	}
+	75%{
+		background-color: #edf4f4;
+	}
+
+	80%{
+		background-color: #efcd6a;
+	}
+	90%{
+		background-color: #efcd7c;
+	}
+	
+	100%{
+		background-image: linear-gradient(to right bottom, #1c55be, #0f4794, #14396b, #192943, #181a1e);
+	}
+	
+}
+@keyframes sunmotion{
+	0%{	
+		transform: translate(-200px, 250px);
+	}
+	15%{
+		transform: translate(200px, -50px) scale(1.2);
+		background-color: rgb(247, 170, 89);
+	}
+	25%{
+		transform: translate(400px, -100px) scale(1.2);
+		background-color: rgb(247, 170, 89);
+	}
+	40%{
+		transform: translate(600px, -170px) scale(1.28);
+		background-color: rgb(252, 212, 53);
+
+	}
+	50%{
+		transform: translate(700px, -200px) scale(1.25);
+		background-color: rgb(252, 212, 53);
+	}
+	55%{
+		transform: translate(800px, -180px) scale(1.2);
+		background-color: rgb(252, 212, 53);
+	}
+	60%{
+
+		transform: translate(850px, -140px) scale(1.2);
+		background-color: rgb(255, 173, 66);
+	}
+	65%{
+
+		transform: translate(900px, -100px) scale(1.2);
+		background-color: rgb(255, 173, 66);
+	}
+	70%{
+
+		transform: translate(950px, -70px) scale(1.15);
+		background-color: rgb(255, 173, 66);
+	}
+	75%{
+
+		transform: translate(1350px, 350px);
+		background-color:#ed7b2a;
+	}
+	
+	80%{
+		transform: translate(400px, 350px) scale(0.8);
+		background-color:#fff;
+	}
+	85%{
+		transform: translate(400px, -10px) scale(0.8);
+		background-color:#fff;
+	}
+	88%{
+		transform: translate(400px, -70px) scale(0.9);
+		background-color:#fff;
+	}
+
+	92%{
+
+		transform: translate(400px, -100px) scale(0.9);
+		background-color:#fff;
+	}
+	95%{
+transform: translate(400px, -150px) scale(0.9);
+		background-color:#fff;
+
+	}
+	100%{
+		transform: translate(400px, -250px) scale(1.0);
+		background-color:#fff;
+	}		
+	
+}
+

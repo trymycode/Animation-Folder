@@ -1,0 +1,38 @@
+.shape{
+	background-color: yellow;
+	color: black;
+	width: 200px;
+	height: 200px;
+	margin: 40px;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+
+}
+p{
+	padding-top: 35%;
+
+}
+.shape1:hover{
+	background-color: #f48642;
+	border-radius: 50%;
+	transform: translateY(300px);
+	transform-origin: top-left;
+}
+
+.shape2:hover{
+	background-color: #a3d8e2;
+	border-radius: 50%;
+	transform: translateX(300px);
+	
+}
+.animated1{
+	transition: background-color  2s  0.2s ease-out,  border-radius 2s  0.5s ease-out, transform  5s  0.7s linear;
+	
+
+}
+.animated2{
+	transition: background-color  2s  0.2s ease-out,  border-radius 2s  0.5s ease-out, transform  5s  0.7s linear;
+	
+
+}

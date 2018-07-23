@@ -1,0 +1,47 @@
+body{
+	background-color: #abc;
+	text-align: center;
+
+}
+
+p{	
+	animation-name: rainbowtext;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rainbowtext{
+	0%{
+		color: purple;
+		font-size: 40px;
+		/*transform: translateY(100px);*/
+
+	}
+	25%{
+		color: yellow;
+		font-size: 50px;
+		transform: translateY(200px);
+
+	}
+	50%{
+		color: red;
+		font-size: 70px;
+		transform: translateY(400px);
+	}
+
+	75%{
+		color: orange;
+		font-size: 50px;
+		transform: translateY(200px);
+	}
+	100%{
+		color: blue;
+		font-size: 40px;
+		/*transform: translateY(100px);*/
+	}
+
+
+
+}
