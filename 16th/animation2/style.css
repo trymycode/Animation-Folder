@@ -1,0 +1,80 @@
+*{
+	padding: 0;	
+	margin: 0;	
+}
+body{
+	background: -webkit-linear-gradient(top, rgba(183,222,237,0.8) 0%, rgba(183,222,237,0.8) 47%, rgba(113,206,239,0.8) 74%, rgba(33,180,226,0.8) 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+#main{
+	width: 70vw;
+	height: 70vh;
+	background-color: rgba(242, 252, 100,0.4);
+	margin: 0 auto;
+	position: absolute;
+   	top: 12vh;
+    left: 50vw;
+    overflow: hidden;
+   margin-left: -35vw;
+   animation: floating 3.5s ease infinite;
+}
+
+@-webkit-keyframes floating{
+	50%{
+		top: 9vh;
+	}
+	100%{
+		top: 12vh;
+	}
+}
+@keyframes floating{
+	50%{
+		top: 9vh;
+	}
+	100%{
+		top: 12vh;
+	}
+}
+#main_shadow{
+	position: relative;
+	height: 10vh;
+	width: 70vw;
+	background-color:rgba(242, 252, 100,0.25);
+	margin: 0px 0px 0px;
+	top: 90vh;
+	left: 50vw;
+	margin-left: -35vw;
+	overflow-y: hidden;
+	 animation: shadowEffect 3.5s ease infinite;
+
+}
+
+@-webkit-keyframes shadowEffect{
+	50%{
+		top: 93vh;
+		opacity: 0.18;
+		
+	}
+	
+	100% {
+		top: 90vh;
+		
+	}
+}
+@keyframes shadowEffect{
+	50%{
+		top: 93vh;
+	   opacity: 0.18;
+		}
+	
+	100% {
+		top: 90vh;
+		
+		}
+}
+
+
